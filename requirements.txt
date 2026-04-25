@@ -1,0 +1,14 @@
+flask
+flask-cors
+opencv-python
+numpy
+spotipy
+insightface
+onnxruntime
+mediapipe
+pygame
+pycaw
+comtypes
+python-dotenv
+qrcode[pil]
+waitress
