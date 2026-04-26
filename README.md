@@ -2,28 +2,28 @@ FacePlay 🎵
 
 Your face is the aux cord.
 
-FacePlay uses real-time face recognition to detect who walks into a room and automatically plays their Spotify song. No app, no phone, no buttons — just walk in.
+FacePlay uses real-time face recognition to detect who walks into a room and automatically plays their Spotify song. Just walk in.
 
 How It Works
 
-Register your face + a Spotify song via QR code (works from any device, any network)
+Register your face + a Spotify song via QR code
 Walk in front of the camera
 Your song plays instantly on Spotify
 The display screen shows your name, photo, and album art
 
-Hand gesture control: open hand = volume up, closed fist = volume down.
+Hand gesture control: open hand = volume up, close fist = volume down.
 
 Demo
 DashboardDisplay ScreenManage registered people, view live activity, scan QR to joinFull-screen now-playing view with album art background
 
 Tech Stack
 
-Face Recognition — InsightFace buffalo_l model, cosine similarity matching
-Hand Gestures — MediaPipe Hands
-Music — Spotify Web API via Spotipy
-Tunnel — Cloudflare tunnel for cross-network QR registration
-Backend — Flask + Waitress
-Frontend — Vanilla HTML/CSS/JS
+Face Recognition - InsightFace buffalo_l model, cosine similarity matching
+Hand Gestures - MediaPipe Hands
+Music - Spotify Web API via Spotipy
+Tunnel - Cloudflare tunnel for cross-network QR registration
+Backend - Flask + Waitress
+Frontend - Vanilla HTML/CSS/JS
 
 
 Setup
@@ -50,7 +50,7 @@ Register Someone
 Click + Add Person on the dashboard, or
 Scan the QR code with any phone (works outside your network)
 
-Enter your name, take/upload a photo, search for your Spotify song, done.
+Enter your name, take/upload a photo, search for your Spotify song, and jam.
 
 Project Structure
 faceplay/
@@ -68,9 +68,9 @@ faceplay/
 Notes
 
 First run downloads the InsightFace model (~300MB), takes a few minutes
-Spotify must be open and playing on a device for playback control to work
+Spotify must be downloaded and will automatically launch with application
 Face cooldown is 60 seconds to prevent repeated triggering
-Runs fully local — no cloud, no data leaves your machine
+Runs fully local
 
 
 Built at a hackathon. 🏆
